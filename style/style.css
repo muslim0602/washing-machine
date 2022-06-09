@@ -40,3 +40,141 @@ img{
 .main-content{
   flex-grow: 1;
 }
+
+
+/* SITE_HEADER */
+.site-header {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+}
+
+.site-header-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header-list-item {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-header-list-item:not(:first-child):hover{
+  opacity: 0.5;
+
+}
+
+.site-header-list-item:nth-child(1){
+  color: #fff;
+}
+
+.site-header-list-item:not(:last-child) {
+  /* margin-right: 100px; */
+}
+
+.site-header-text {
+  margin: 0;
+  margin-top: 20px;
+  color: #fff ;
+}
+
+
+.main-content {
+}
+.opportunities {
+  position: relative;
+  width: 1020px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 50px;
+}
+
+.opportunities::after{
+  position: absolute;
+  content: "<";
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  left: -100px;
+  background-color: rgba(255, 255, 255, 0.5); ;
+
+}
+.opportunities::before{
+  position: absolute;
+  content: ">";
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  right: -100px;
+  background-color: rgba(255, 255, 255, 0.5); ;
+}
+
+.opportunities::after:hover,
+.opportunities::before:hover{
+  background-color: rgba(255, 255, 255, 0.2); ;
+}
+
+
+.box {
+  width: 340px;
+  padding: 150px 70px 150px 40px;
+  background-color: rgba(34, 34, 34, 0.8);
+}
+
+.box:hover{
+  background-color: rgba(34, 34, 34, 1);
+
+}
+
+.features-box{
+  display: inline-flex;
+  flex-direction: column;
+}
+.box-heading {
+  font-size: 20px;
+  line-height: 1.5;
+  color: pink;
+
+}
+.box-text {
+  font-size: 30px;
+  color: #fff;
+
+}
+
+.btn{
+  position: absolute;
+  width: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  bottom: -25px;
+  left: 50px;
+}
+.btn:hover{
+  bottom: -28px;
+}
+
+.timer{
+  background-color: rgba(34, 34, 34, 0.6);
+}
+
+.temp{
+  background-color: rgba(34, 34, 34, 0.7);
+}
+.load{
+  background-color: rgba(34, 34, 34, 0.8);
+}
